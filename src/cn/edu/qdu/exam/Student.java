@@ -13,7 +13,7 @@ public class Student {
     Integer score=0;
     BufferedReader in= null;
     public void readAnswer(BufferedReader in,String name) throws IOException{
-    	 this.name = name;
+    	 this.name = name.substring(0,name.indexOf(".") );
     	 int temp;
     	 while ((temp=in.read())!=-1) {
 			choice.add(temp);
