@@ -23,7 +23,9 @@ public class Student {
     	Iterator<Integer> stu =  this.choice.iterator(); 
     	Iterator<Integer> ans = rightAnswer.iterator();
     	while (stu.hasNext()&&ans.hasNext()) {
-			if (stu.next()==ans.next()) {
+    		int a=stu.next();
+    		int b=ans.next();
+			if (a==b||a==b+32) {
 				score+=4;
 			}
 		}
