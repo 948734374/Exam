@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class Teacher {
 public static void main(String[] args) throws IOException {
-	File students =new File("C:\\Users\\wang\\students");
-	File answer =new File("C:\\Users\\wang\\answer.txt");
-	File result = new File("C:\\Users\\wang\\result.txt");
+	File students =new File("C:\\Users\\YO~~~\\Desktop\\students");
+	File answer =new File("C:\\Users\\YO~~~\\Desktop\\answer.txt");
+	File result = new File("C:\\Users\\YO~~~\\Desktop\\result.txt");
 	if(!result.exists()){
 		result.createNewFile();
 	}
@@ -31,8 +31,8 @@ public static void main(String[] args) throws IOException {
 		student[i].compare(answer1.rightAnswer);
 		out = new BufferedWriter(new FileWriter(result,true));
 		student[i].recordResult(out);
-		in.close();
-		out.close();
+	//	in.close();
+	//	out.close();
 	}
 	}catch(Exception e){
 		e.printStackTrace();
